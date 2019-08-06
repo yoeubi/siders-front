@@ -112,46 +112,66 @@ var _jsxFileName = "C:\\dev\\siders\\components\\Header.tsx";
 const HeaderWrap = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "Header__HeaderWrap",
   componentId: "sc-1xalm8m-0"
-})(["display:flex;justify-content:center;align-items:space-between;height:50px;"]);
-const Bar = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
-  displayName: "Header__Bar",
+})(["position:fixed;top:0;left:0;right:0;display:flex;justify-content:center;align-items:space-between;height:50px;border-bottom:1px solid #f0f0f0;"]);
+const Icon = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "Header__Icon",
   componentId: "sc-1xalm8m-1"
-})([""]);
-const Search = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+})(["width:50px;cursor:pointer;padding:15px;"]);
+const Search = styled_components__WEBPACK_IMPORTED_MODULE_1___default()(Icon).withConfig({
   displayName: "Header__Search",
   componentId: "sc-1xalm8m-2"
 })([""]);
+const Bar = styled_components__WEBPACK_IMPORTED_MODULE_1___default()(Icon).withConfig({
+  displayName: "Header__Bar",
+  componentId: "sc-1xalm8m-3"
+})([""]);
 const Logo = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.h1.withConfig({
   displayName: "Header__Logo",
-  componentId: "sc-1xalm8m-3"
-})(["color:#4b8aff;font-size:25px;font-weight:700;line-height:5rem;"]);
+  componentId: "sc-1xalm8m-4"
+})(["color:#4b8aff;font-size:25px;font-weight:700;line-height:5rem;flex-grow:1;text-align:center;"]);
 
 const Header = () => {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeaderWrap, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 37
     },
     __self: undefined
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Bar, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 38
     },
     __self: undefined
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "../static/menu.svg",
+    alt: "\uBA54\uB274",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 39
+    },
+    __self: undefined
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
     },
     __self: undefined
   }, "Siders"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Search, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 42
     },
     __self: undefined
-  }));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "../static/search.svg",
+    alt: "\uCC3E\uAE30",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: undefined
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
