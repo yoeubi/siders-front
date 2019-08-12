@@ -93,6 +93,304 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./ResetCSS.ts":
+/*!*********************!*\
+  !*** ./ResetCSS.ts ***!
+  \*********************/
+/*! exports provided: GlobalStyle */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GlobalStyle", function() { return GlobalStyle; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+
+const GlobalStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["createGlobalStyle"]`
+    /* 스타일 초기화 */
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+    /* 전체 선택자 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1em;
+    font: inherit;
+    vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section,
+    main {
+    display: block;
+    }
+    ul,
+    ol {
+    list-style: none;
+    }
+    table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+    /* 본문 스타일 */
+    html {
+    font-size: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    }
+    /* 하이퍼 링크 스타일 */
+    a {
+    color: inherit;
+    text-decoration: none;
+    }
+    /* 기본 레이아웃 */
+    *,
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    }
+    /* 숨김 */
+    .readable-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    }
+
+    img {
+    width: 100%;
+    }
+
+    button {
+    border: none;
+    background-color: transparent;
+    }
+
+    input {
+    border: none;
+    }
+`;
+
+/***/ }),
+
+/***/ "./components/Header.tsx":
+/*!*******************************!*\
+  !*** ./components/Header.tsx ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\dev\\siders\\components\\Header.tsx";
+
+
+const HeaderWrap = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "Header__HeaderWrap",
+  componentId: "sc-1xalm8m-0"
+})(["position:fixed;top:0;left:0;right:0;display:flex;justify-content:center;align-items:space-between;height:50px;border-bottom:1px solid #f0f0f0;z-index:10;background-color:#fff;"]);
+const Icon = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "Header__Icon",
+  componentId: "sc-1xalm8m-1"
+})(["width:50px;cursor:pointer;padding:15px;"]);
+const Search = styled_components__WEBPACK_IMPORTED_MODULE_1___default()(Icon).withConfig({
+  displayName: "Header__Search",
+  componentId: "sc-1xalm8m-2"
+})([""]);
+const Bar = styled_components__WEBPACK_IMPORTED_MODULE_1___default()(Icon).withConfig({
+  displayName: "Header__Bar",
+  componentId: "sc-1xalm8m-3"
+})([""]);
+const Logo = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.h1.withConfig({
+  displayName: "Header__Logo",
+  componentId: "sc-1xalm8m-4"
+})(["font-size:25px;font-weight:700;line-height:4.8rem;flex-grow:1;"]);
+
+const Header = () => {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeaderWrap, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Bar, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "../static/menu.svg",
+    alt: "\uBA54\uB274",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: undefined
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: undefined
+  }, "Siders"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Search, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "../static/search.svg",
+    alt: "\uCC3E\uAE30",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: undefined
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./components/Layout.tsx":
+/*!*******************************!*\
+  !*** ./components/Layout.tsx ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.tsx");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\dev\\siders\\components\\Layout.tsx";
+
+
+
+const Content = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
+  displayName: "Layout__Content",
+  componentId: "s13i9u-0"
+})(["margin-top:50px;padding:20px;"]);
+
+const Layout = ({
+  children
+}) => {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }, children));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
@@ -718,167 +1016,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _ResetCSS__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ResetCSS */ "./ResetCSS.ts");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.tsx");
 
 var _jsxFileName = "C:\\dev\\siders\\pages\\_app.tsx";
 
 
 
-const GlobalStyle = styled_components__WEBPACK_IMPORTED_MODULE_3__["createGlobalStyle"]`
-/* @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap'); */
 
-/* 스타일 초기화 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  /* 전체 선택자 */
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 1em;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-main {
-  display: block;
-}
-ul,
-ol {
-  list-style: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* 본문 스타일 */
-html {
-  font-size: 10px;
-  font-family: 'Noto Sans KR', sans-serif;
-}
-/* 하이퍼 링크 스타일 */
-a {
-  color: inherit;
-  text-decoration: none;
-}
-/* 기본 레이아웃 */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-/* 숨김 */
-.readable-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  margin: -1px;
-  clip: rect(0, 0, 0, 0);
-}
-
-img {
-  width: 100%;
-}
-
-button {
-  border: none;
-  background-color: transparent;
-}
-
-input {
-  border: none;
-}
-`;
 class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
   render() {
     const {
@@ -888,22 +1033,28 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
     return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_1__["Container"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 164
+        lineNumber: 10
       },
       __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(GlobalStyle, {
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ResetCSS__WEBPACK_IMPORTED_MODULE_3__["GlobalStyle"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 165
+        lineNumber: 11
       },
       __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
+    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 166
+        lineNumber: 12
       },
       __self: this
-    })));
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }))));
   }
 
 }

@@ -1131,7 +1131,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_3___default.a {
         enhanceApp: App => props => sheet.collectStyles(react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(App, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 12
+            lineNumber: 18
           },
           __self: this
         })))
@@ -1144,6 +1144,54 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_3___default.a {
     } finally {
       sheet.seal();
     }
+  }
+
+  render() {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_3__["Html"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_3__["Head"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: this
+    }, "Siders"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
+      href: "https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap",
+      rel: "stylesheet",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("body", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_3__["Main"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_3__["NextScript"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
+      },
+      __self: this
+    })));
   }
 
 }

@@ -11,6 +11,8 @@ const HeaderWrap = styled.div`
   align-items: space-between;
   height: 50px;
   border-bottom: 1px solid #f0f0f0;
+  z-index: 10;
+  background-color: #fff;
 `;
 
 const Icon = styled.div`
@@ -24,12 +26,10 @@ const Search = styled(Icon)``;
 const Bar = styled(Icon)``;
 
 const Logo = styled.h1`
-  color: #4b8aff;
   font-size: 25px;
   font-weight: 700;
-  line-height: 5rem;
+  line-height: 4.8rem;
   flex-grow: 1;
-  text-align: center;
 `;
 
 const Header = () => {

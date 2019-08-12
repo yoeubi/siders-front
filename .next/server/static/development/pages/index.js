@@ -93,10 +93,10 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/Header.tsx":
-/*!*******************************!*\
-  !*** ./components/Header.tsx ***!
-  \*******************************/
+/***/ "./components/Card.tsx":
+/*!*****************************!*\
+  !*** ./components/Card.tsx ***!
+  \*****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -106,75 +106,167 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\dev\\siders\\components\\Header.tsx";
+var _jsxFileName = "C:\\dev\\siders\\components\\Card.tsx";
 
 
-const HeaderWrap = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
-  displayName: "Header__HeaderWrap",
-  componentId: "sc-1xalm8m-0"
-})(["position:fixed;top:0;left:0;right:0;display:flex;justify-content:center;align-items:space-between;height:50px;border-bottom:1px solid #f0f0f0;"]);
-const Icon = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
-  displayName: "Header__Icon",
-  componentId: "sc-1xalm8m-1"
-})(["width:50px;cursor:pointer;padding:15px;"]);
-const Search = styled_components__WEBPACK_IMPORTED_MODULE_1___default()(Icon).withConfig({
-  displayName: "Header__Search",
-  componentId: "sc-1xalm8m-2"
+const CardWrap = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.li.withConfig({
+  displayName: "Card__CardWrap",
+  componentId: "sc-13o6qwz-0"
+})(["flex-basis:48%;margin-bottom:20px;border-radius:5px;overflow:hidden;transition:all 0.3s cubic-bezier(0.25,0.8,0.25,1);&:nth-child(2n){margin-left:auto;}&:hover{box-shadow:0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);}"]);
+const CardImgWrap = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "Card__CardImgWrap",
+  componentId: "sc-13o6qwz-1"
 })([""]);
-const Bar = styled_components__WEBPACK_IMPORTED_MODULE_1___default()(Icon).withConfig({
-  displayName: "Header__Bar",
-  componentId: "sc-1xalm8m-3"
-})([""]);
-const Logo = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.h1.withConfig({
-  displayName: "Header__Logo",
-  componentId: "sc-1xalm8m-4"
-})(["color:#4b8aff;font-size:25px;font-weight:700;line-height:5rem;flex-grow:1;text-align:center;"]);
+const CardContent = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "Card__CardContent",
+  componentId: "sc-13o6qwz-2"
+})(["padding:10px;h2{font-size:1.5rem;line-height:1.33;margin-bottom:0.5rem;}p{font-size:1.2rem;line-height:1.43;letter-spacing:0.01071em;}"]);
 
-const Header = () => {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeaderWrap, {
+const Card = () => {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CardWrap, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 37
     },
     __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Bar, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CardImgWrap, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 38
     },
     __self: undefined
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "../static/menu.svg",
-    alt: "\uBA54\uB274",
+    src: "../static/sidus1.jpg",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39
     },
     __self: undefined
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CardContent, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 41
     },
     __self: undefined
-  }, "Siders"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Search, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 42
     },
     __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "../static/search.svg",
-    alt: "\uCC3E\uAE30",
+  }, "\uCC44\uD305\uAE30\uB2A5 \uD3EC\uD568 \uC1FC\uD551\uBAB0 \uC571 \uAD6C\uCD95"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43
     },
     __self: undefined
-  })));
+  }, "\uC11C\uC6B8"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: undefined
+  }, "2019.08.12")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Header);
+/* harmony default export */ __webpack_exports__["default"] = (Card);
+
+/***/ }),
+
+/***/ "./components/CardList.tsx":
+/*!*********************************!*\
+  !*** ./components/CardList.tsx ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Card */ "./components/Card.tsx");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\dev\\siders\\components\\CardList.tsx";
+
+
+
+const CardListWrap = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.ul`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const CardList = () => {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CardListWrap, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: undefined
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CardList);
 
 /***/ }),
 
@@ -187,25 +279,24 @@ const Header = () => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Header */ "./components/Header.tsx");
- // import { NextPageContext, NextPage } from "next";
-// import styled from "styled-components";
-// interface Props {
-//   userAgent?: string;
-// }
-// const Title = styled.h1`
-//   background-color: skyblue;
-// `;
-// const Home: NextPage<Props> = ({ userAgent }) => (
-//   <Title>Hello world! - user agent: {userAgent}</Title>
-// );
-// Home.getInitialProps = async ({ req }: NextPageContext) => {
-//   const userAgent = req ? req.headers["user-agent"] : navigator.userAgent;
-//   return { userAgent };
-// };
-// export default Home;
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_CardList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../components/CardList */ "./components/CardList.tsx");
+var _jsxFileName = "C:\\dev\\siders\\pages\\index.tsx";
 
-/* harmony default export */ __webpack_exports__["default"] = (_components_Header__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+
+function Index() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CardList__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  });
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
