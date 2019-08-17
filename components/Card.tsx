@@ -16,8 +16,6 @@ const CardWrap = styled.li`
   }
 `;
 
-const CardImgWrap = styled.div``;
-
 const CardContent = styled.div`
   padding: 10px;
   h2 {
@@ -35,9 +33,7 @@ const CardContent = styled.div`
 const Card = () => {
   return (
     <CardWrap>
-      <CardImgWrap>
-        <img src="../static/sidus1.jpg" />
-      </CardImgWrap>
+      <img src="../static/sidus1.jpg" />
       <CardContent>
         <h2>채팅기능 포함 쇼핑몰 앱 구축</h2>
         <p>서울</p>

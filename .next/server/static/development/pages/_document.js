@@ -1159,36 +1159,22 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_3___default.a {
         lineNumber: 38
       },
       __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", {
+    }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("body", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 39
       },
       __self: this
-    }, "Siders"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
-      href: "https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap",
-      rel: "stylesheet",
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_3__["Main"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 40
       },
       __self: this
-    })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("body", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 45
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_3__["Main"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 46
-      },
-      __self: this
     }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_3__["NextScript"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47
+        lineNumber: 41
       },
       __self: this
     })));

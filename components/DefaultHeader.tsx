@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { Icon, CommonHeader } from "./common";
 
-const HeaderWrap = styled.div`
+const Header = styled(CommonHeader)`
   position: fixed;
   top: 0;
   left: 0;
@@ -9,21 +10,13 @@ const HeaderWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: space-between;
-  height: 50px;
   border-bottom: 1px solid #f0f0f0;
   z-index: 10;
-  background-color: #fff;
 `;
 
-const Icon = styled.div`
-  width: 50px;
-  cursor: pointer;
-  padding: 15px;
-`;
+const BarIcon = styled(Icon)``;
 
-const Search = styled(Icon)``;
-
-const Bar = styled(Icon)``;
+const SearchIcon = styled(Icon)``;
 
 const Logo = styled.h1`
   font-size: 25px;
@@ -32,18 +25,18 @@ const Logo = styled.h1`
   flex-grow: 1;
 `;
 
-const Header = () => {
+const DefaultHeader = () => {
   return (
-    <HeaderWrap>
-      <Bar>
+    <Header>
+      <BarIcon>
         <img src="../static/menu.svg" alt="메뉴" />
-      </Bar>
+      </BarIcon>
       <Logo>Siders</Logo>
-      <Search>
+      <SearchIcon>
         <img src="../static/search.svg" alt="찾기" />
-      </Search>
-    </HeaderWrap>
+      </SearchIcon>
+    </Header>
   );
 };
 
-export default Header;
+export default DefaultHeader;
