@@ -4686,7 +4686,7 @@ function Index() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /*!********************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5Cdev%5Csiders%5Cpages%5Cindex.tsx ***!
   \********************************************************************************************************/
@@ -4709,5 +4709,5 @@ module.exports = dll_7aff549c98b978433226;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

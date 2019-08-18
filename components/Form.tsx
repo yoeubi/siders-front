@@ -36,10 +36,11 @@ const FormWrap = styled.form`
     outline: none;
   }
   p {
-    /* visibility: hidden; */
+    visibility: hidden;
     font-size: 13px;
     margin: 10px 0;
     color: #ff6161;
+    height: 20px;
   }
 `;
 
@@ -54,7 +55,7 @@ const Form = () => {
         <div>
           <label htmlFor="email">이메일</label>
           <input type="email" id="email" placeholder="이메일을 입력해주세요." />
-          <p>이메일이 존재합니다.</p>
+          <p>이미 사용된 이메일입니다. 다른 이메일을 입력해주세요.</p>
         </div>
         <div>
           <label htmlFor="password">비밀번호</label>
@@ -72,7 +73,7 @@ const Form = () => {
             id="checkPassword"
             placeholder="비밀번호를 확인해주세요."
           />
-          <p>비밀번호가 다릅니다</p>
+          <p>비밀번호가 일치하지 않습니다. 다시 시도해주세요.</p>
         </div>
       </FormWrap>
       <ButtonWrap>
