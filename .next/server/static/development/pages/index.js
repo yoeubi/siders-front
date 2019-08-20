@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -225,7 +225,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Card */ "./components/Card.tsx");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _firebase__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../firebase */ "./firebase/index.ts");
 var _jsxFileName = "C:\\dev\\siders\\components\\CardList.tsx";
+
 
 
 
@@ -235,25 +237,14 @@ const CardListWrap = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.ul
 })(["display:flex;flex-wrap:wrap;"]);
 
 const CardList = () => {
+  Object(_firebase__WEBPACK_IMPORTED_MODULE_3__["getUser"])();
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CardListWrap, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: undefined
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     },
     __self: undefined
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -299,6 +290,18 @@ const CardList = () => {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
     },
     __self: undefined
   }));
@@ -449,7 +452,7 @@ const Footer = () => {
 /*!************************************!*\
   !*** ./components/common/index.ts ***!
   \************************************/
-/*! exports provided: Icon, CommonHeader, MainWithFixedHeader, MainWithNormalHeader, Button */
+/*! exports provided: Icon, CommonHeader, MainWithFixedHeader, MainWithNormalHeader, LinkButton */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -458,7 +461,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CommonHeader", function() { return CommonHeader; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainWithFixedHeader", function() { return MainWithFixedHeader; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainWithNormalHeader", function() { return MainWithNormalHeader; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return Button; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkButton", function() { return LinkButton; });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -483,10 +486,63 @@ const MainWithNormalHeader = styled_components__WEBPACK_IMPORTED_MODULE_0___defa
   displayName: "common__MainWithNormalHeader",
   componentId: "sc-1fztl5u-4"
 })([""]);
-const Button = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.button.withConfig({
-  displayName: "common__Button",
+const LinkButton = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.a.withConfig({
+  displayName: "common__LinkButton",
   componentId: "sc-1fztl5u-5"
-})(["width:100%;height:50px;border:1px solid #181818;border-radius:5px;font-size:15px;font-weight:700;cursor:pointer;transition:all 0.5s;outline:none;&:hover{background-color:#181818;border:1px solid #fff;color:#fff;}"]);
+})(["display:block;height:50px;line-height:50px;border:1px solid #181818;border-radius:5px;font-size:15px;font-weight:700;text-align:center;cursor:pointer;transition:all 0.5s;&:hover{background-color:#181818;border:1px solid #fff;color:#fff;}"]);
+
+/***/ }),
+
+/***/ "./firebase/index.ts":
+/*!***************************!*\
+  !*** ./firebase/index.ts ***!
+  \***************************/
+/*! exports provided: createUser, login, logout, getUser, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createUser", function() { return createUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "login", function() { return login; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUser", function() { return getUser; });
+/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase */ "firebase");
+/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(firebase__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/auth */ "firebase/auth");
+/* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(firebase_auth__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDgCXcpDyWp3y_O8dEvluzz6FSZYHuQ8UI",
+  authDomain: "siders.firebaseapp.com",
+  databaseURL: "https://siders.firebaseio.com",
+  projectId: "siders",
+  storageBucket: "",
+  messagingSenderId: "455582104035",
+  appId: "1:455582104035:web:25d1b7d5796aba09"
+};
+
+if (!firebase__WEBPACK_IMPORTED_MODULE_0__["apps"].length) {
+  firebase__WEBPACK_IMPORTED_MODULE_0__["initializeApp"](firebaseConfig);
+}
+
+const createUser = ({
+  email,
+  password
+}) => firebase__WEBPACK_IMPORTED_MODULE_0__["auth"]().createUserWithEmailAndPassword(email, password);
+const login = ({
+  email,
+  password
+}) => firebase__WEBPACK_IMPORTED_MODULE_0__["auth"]().signInWithEmailAndPassword(email, password);
+const logout = () => firebase__WEBPACK_IMPORTED_MODULE_0__["auth"]().signOut();
+const getUser = () => firebase__WEBPACK_IMPORTED_MODULE_0__["auth"]().onAuthStateChanged(user => {
+  if (user) {
+    console.log("user", user);
+  } else {
+    console.log("not user");
+  }
+});
+/* harmony default export */ __webpack_exports__["default"] = (firebase__WEBPACK_IMPORTED_MODULE_0__);
 
 /***/ }),
 
@@ -528,7 +584,7 @@ function Index() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!*******************************!*\
   !*** multi ./pages/index.tsx ***!
   \*******************************/
@@ -537,6 +593,28 @@ function Index() {
 
 module.exports = __webpack_require__(/*! C:\dev\siders\pages\index.tsx */"./pages/index.tsx");
 
+
+/***/ }),
+
+/***/ "firebase":
+/*!***************************!*\
+  !*** external "firebase" ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("firebase");
+
+/***/ }),
+
+/***/ "firebase/auth":
+/*!********************************!*\
+  !*** external "firebase/auth" ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("firebase/auth");
 
 /***/ }),
 

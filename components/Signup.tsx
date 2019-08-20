@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Button } from "./common";
+import { LinkButton } from "./common";
+import Link from "next/link";
 
 const WelCome = styled.div`
   display: flex;
@@ -31,7 +32,9 @@ const Signup = () => {
         <span>경험해보세요.</span>
       </Title>
       <ButtonWrap>
-        <Button>회원가입</Button>
+        <Link href="/signupform">
+          <LinkButton>회원가입</LinkButton>
+        </Link>
       </ButtonWrap>
     </WelCome>
   );

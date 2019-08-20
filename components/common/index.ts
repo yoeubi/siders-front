@@ -25,16 +25,17 @@ export const MainWithFixedHeader = styled(Main)`
 
 export const MainWithNormalHeader = styled(Main)``;
 
-export const Button = styled.button`
-  width: 100%;
+export const LinkButton = styled.a`
+  display: block;
   height: 50px;
+  line-height: 50px;
   border: 1px solid #181818;
   border-radius: 5px;
   font-size: 15px;
   font-weight: 700;
+  text-align: center;
   cursor: pointer;
   transition: all 0.5s;
-  outline: none;
   &:hover {
     background-color: #181818;
     border: 1px solid #fff;
