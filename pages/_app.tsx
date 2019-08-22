@@ -1,4 +1,4 @@
-import App, { Container } from "next/app";
+import App from "next/app";
 import React from "react";
 import { GlobalStyle } from "../ResetCSS";
 import Head from "next/Head";
@@ -7,7 +7,7 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <Container>
+      <>
         <Head>
           <title>Siders</title>
           <link
@@ -17,7 +17,7 @@ export default class MyApp extends App {
         </Head>
         <GlobalStyle />
         <Component {...pageProps} />
-      </Container>
+      </>
     );
   }
 }

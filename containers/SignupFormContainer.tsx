@@ -1,9 +1,9 @@
 import React, { useCallback } from "react";
 import SignupForm from "../components/SignupForm";
-import { useForm } from "../lib/form";
+import { useForm } from "../lib/useForm";
 import { createUser } from "../firebase/index";
 import { useRouter } from "next/router";
-import { useError } from "../lib/error";
+import { useError } from "../lib/useError";
 
 const SignupFormContainer = () => {
   const router = useRouter();

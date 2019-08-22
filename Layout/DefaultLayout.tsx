@@ -1,12 +1,12 @@
 import React from "react";
-import DefaultHeader from "../components/DefaultHeader";
 import Footer from "../components/Footer";
 import { MainWithFixedHeader as Main } from "../components/common";
+import HeaderContainer from "./../containers/HeaderContainer";
 
 const DefaultLayout: React.FunctionComponent = ({ children }) => {
   return (
     <>
-      <DefaultHeader />
+      <HeaderContainer />
       <Main>{children}</Main>
       <Footer />
     </>

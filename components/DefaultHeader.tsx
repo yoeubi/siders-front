@@ -25,10 +25,14 @@ const Logo = styled.h1`
   flex-grow: 1;
 `;
 
-const DefaultHeader = () => {
+interface Props {
+  onClick: () => void;
+}
+
+const DefaultHeader = ({ onClick }: Props) => {
   return (
     <Header>
-      <BarIcon>
+      <BarIcon onClick={onClick}>
         <img src="../static/menu.svg" alt="메뉴" />
       </BarIcon>
       <Logo>Siders</Logo>

@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { LinkButton } from "./common/index";
-import { FormValue } from "./../lib/form";
-import { ErrorInfo } from "../lib/error";
+import { FormValue } from "../lib/useForm";
+import { ErrorInfo } from "../lib/useError";
 
 const WelCome = styled.div`
   display: flex;

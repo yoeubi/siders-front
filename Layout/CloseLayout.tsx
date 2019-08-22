@@ -1,6 +1,6 @@
 import React from "react";
-import CloseHeader from "./../components/CloseHeader";
-import { MainWithNormalHeader as Main } from "./../components/common/index";
+import CloseHeader from "../components/CloseHeader";
+import { MainWithNormalHeader as Main } from "../components/common/index";
 
 const CloseLayout: React.FunctionComponent = ({ children }) => {
   return (

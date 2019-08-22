@@ -1,5 +1,5 @@
 import React from "react";
-import CloseLayout from "../Layout/CloseLayout";
+import CloseLayout from "../layout/CloseLayout";
 import SigninFormContainer from "../containers/SigninFormContainer";
 
 const signin = () => {

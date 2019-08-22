@@ -1,5 +1,5 @@
 import React from "react";
-import CloseLayout from "../Layout/CloseLayout";
+import CloseLayout from "../layout/CloseLayout";
 import Signup from "./../components/Signup";
 
 const signup = () => {
