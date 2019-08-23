@@ -10,7 +10,7 @@ const Modal = styled.ul`
   right: 0;
   bottom: 0;
   z-index: 10;
-  padding: 15px;
+  padding: 15px 0;
   background-color: rgba(255, 255, 255, 0.7);
 `;
 
