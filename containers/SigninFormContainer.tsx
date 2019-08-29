@@ -3,7 +3,7 @@ import SigninForm from "../components/SigninForm";
 import { useForm } from "../lib/useForm";
 import { useRouter } from "next/router";
 import { useError } from "../lib/useError";
-import { login } from "../firebase";
+import { login } from "../firebase/auth";
 
 const SigninFormContainer = () => {
   const router = useRouter();

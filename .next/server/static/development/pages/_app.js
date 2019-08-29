@@ -904,13 +904,13 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
     return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_Head__WEBPACK_IMPORTED_MODULE_4___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
+        lineNumber: 14
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 15
       },
       __self: this
     }, "Siders"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
@@ -918,19 +918,19 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       rel: "stylesheet",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13
+        lineNumber: 16
       },
       __self: this
     })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ResetCSS__WEBPACK_IMPORTED_MODULE_3__["GlobalStyle"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18
+        lineNumber: 21
       },
       __self: this
     }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 22
       },
       __self: this
     })));

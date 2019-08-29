@@ -3,7 +3,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import { useBodyHidden } from "../lib/useCSS";
 
-const Modal = styled.ul`
+const List = styled.ul`
   position: fixed;
   top: 50px;
   left: 0;
@@ -14,6 +14,10 @@ const Modal = styled.ul`
   background-color: rgba(255, 255, 255, 0.7);
 `;
 
+const Item = styled.li`
+  padding: 0 15px;
+`;
+
 interface Props {
   onClick: () => void;
 }
@@ -21,28 +25,28 @@ interface Props {
 const Tab = ({ onClick }: Props) => {
   useBodyHidden();
   return (
-    <Modal onClick={onClick}>
-      <li>
-        <Link>
-          <a href="/">유저정보</a>
+    <List onClick={onClick}>
+      <Item>
+        <Link href="/">
+          <a>유저정보</a>
         </Link>
-      </li>
-      <li>
-        <Link>
-          <a href="/signup">로그인/회원가입</a>
+      </Item>
+      <Item>
+        <Link href="/signup">
+          <a>로그인/회원가입</a>
         </Link>
-      </li>
-      <li>
-        <Link>
-          <a href="/">로그아웃</a>
+      </Item>
+      <Item>
+        <Link href="/">
+          <a>로그아웃</a>
         </Link>
-      </li>
-      <li>
-        <Link>
-          <a href="/">모집하기</a>
+      </Item>
+      <Item>
+        <Link href="/">
+          <a>모집하기</a>
         </Link>
-      </li>
-    </Modal>
+      </Item>
+    </List>
   );
 };
 
